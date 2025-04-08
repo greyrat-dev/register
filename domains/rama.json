@@ -1,0 +1,26 @@
+{
+    "description": "Project Description",
+
+    "owner": {
+        "repo": "https://github.com/rasssya76/register",
+        "email": "rassyabr79@gmail.com"
+    },
+
+    "record": {
+        "A": ["1.1.1.1", "1.0.0.1"],
+        "AAAA": ["::1", "::2"],
+        "CNAME": "rammm.xyz",
+        "MX": ["mx1.rammm.xyz", "mx2.rammm.xyz"],
+        "TXT": ["example_verification=1234567890"],
+        "CAA": [
+            { "flags": 0, "tag": "issue", "value": "letsencrypt.org" },
+            { "flags": 0, "tag": "issuewild", "value": "sectigo.com" }
+        ],
+        "SRV": [
+            { "priority": 10, "weight": 60, "port": 5060, "target": "sipserver.rammm.xyz" },
+            { "priority": 20, "weight": 10, "port": 5061, "target": "sipbackup.rammm.xyz" }
+        ]
+    },
+
+    "proxied": false
+}
